@@ -11,7 +11,6 @@ const notify = e => {
 
 // https://issues.chromium.org/issues/40337437#comment54
 const clean = async () => {
-  notify('GG');
   const prefs = await chrome.storage.local.get({
     'clean-on-exit': false,
     'clean-object': null,
